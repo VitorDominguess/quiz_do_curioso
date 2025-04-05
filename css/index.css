@@ -1,0 +1,21 @@
+.onboarding-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header-logo {
+    margin-bottom: 40px;
+  }
+  
+  .header-logo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  

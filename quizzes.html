@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz do Curioso | Quizzes</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/home.css"/>
+  <link rel="stylesheet" href="css/quizzes.css"/>
+</head>
+<body class="bg-gradient">
+  <div class="decor-circle circle-1"></div>
+  <div class="decor-circle circle-2"></div>
+
+  <div class="home-container">
+    <header class="home-header">
+      <div class="user-info">
+        <img src="assets/avatar-default.png" alt="Avatar" class="user-avatar"/>
+        <div>
+          <h2 class="text-white">Categoria: <span id="categoria-nome" class="text-gradient">?</span></h2>
+        </div>
+      </div>
+    </header>
+
+    <button onclick="window.location.href='categorias.html'" class="btn btn-secondary">⬅ Voltar para Categorias</button>
+
+
+    <div id="quizzes-list" class="quizzes-grid">
+      <!-- Conteúdo gerado via JS -->
+    </div>
+  </div>
+
+
+  <script src="js/quizzes.js"></script>
+</body>
+</html>

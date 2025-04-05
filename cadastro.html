@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz do Curioso | Cadastro</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/cadastro.css"/>
+</head>
+<body class="bg-gradient">
+  <div class="decor-circle circle-1"></div>
+  <div class="decor-circle circle-2"></div>
+
+  <div class="home-container">
+    <header class="home-header">
+        <h2 class="text-gradient" style="text-align: center;">Criar Conta</h2>
+      </header>
+
+    <form id="form-cadastro" class="text-white" style="margin-top: 20px;">
+      <input type="text" id="nome" placeholder="Nome completo" required />
+      <input type="text" id="apelido" placeholder="Apelido (sem palavrões)" required maxlength="15"/>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="date" id="nascimento" required />
+      <select id="genero" required>
+        <option value="">Selecione o gênero</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+      <input type="text" id="login" placeholder="Login" required />
+      <input type="password" id="senha" placeholder="Senha" required />
+
+      <p style="margin-top: 10px;">Escolha um avatar:</p>
+      <div style="display: flex; gap: 10px; justify-content: center;">
+        <label><input type="radio" name="avatar" value="avatar1.png" checked /> <img src="assets/avatar1.png" width="50" /></label>
+        <label><input type="radio" name="avatar" value="avatar2.png" /> <img src="assets/avatar2.png" width="50" /></label>
+        <label><input type="radio" name="avatar" value="avatar3.png" /> <img src="assets/avatar3.png" width="50" /></label>
+      </div>
+
+      <p style="margin-top: 10px;">Preferências:</p>
+      <label><input type="checkbox" id="musica" checked /> Música de fundo</label><br>
+      <label><input type="checkbox" id="efeitos" checked /> Efeitos sonoros</label><br>
+      <label>Dificuldade padrão:
+        <select id="dificuldade">
+          <option value="facil">Fácil</option>
+          <option value="medio">Médio</option>
+          <option value="dificil">Difícil</option>
+        </select>
+      </label>
+
+      <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
