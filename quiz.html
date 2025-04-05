@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz do Curioso | Jogar</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="bg-gradient">
+  <div class="decor-circle circle-1"></div>
+  <div class="decor-circle circle-2"></div>
+
+  <div class="home-container">
+    <header class="home-header">
+      <div class="user-info">
+        <img src="assets/avatar-default.png" alt="Avatar" class="user-avatar"/>
+        <div>
+          <h2 class="text-white">Boa sorte, <span id="quiz-nickname" class="text-gradient">Curioso</span>!</h2>
+          <p class="text-white"><i class="fas fa-coins" style="color: gold;"></i> <span id="quiz-coins">0</span></p>
+        </div>
+      </div>
+    </header>
+
+    <div id="quiz-box" class="text-white" style="text-align: center; margin-top: 30px;">
+        <h3 id="question-text"></h3>
+        <ul id="answers-list"></ul>
+        <p>Tempo restante: <span id="timer">15</span> segundos</p>
+      </div>
+      
+
+    <div id="quiz-result" style="display: none;">
+      <h3 class="text-gradient">Fim do Quiz!</h3>
+      <p>Você ganhou <span id="final-score">0</span> moedas!</p>
+      <button onclick="window.location.href='home.html'" class="btn btn-primary">Voltar à Home</button>
+    </div>
+  </div>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
